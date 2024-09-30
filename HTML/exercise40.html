@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My first Webpage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+    canvas {
+      border: 1px solid #000; /* Border around the canvas */
+    }
+  </style>
+</head>
+<body>
+<h1>Draw on Canvas</h1>
+<canvas id="myCanvas" width="400" height="400"></canvas>
+
+<script>
+  // Get the canvas element and its context
+  const canvas = document.getElementById('myCanvas');
+  const ctx = canvas.getContext('2d');
+
+  // Draw a rectangle
+  ctx.fillStyle = 'blue'; // Set the fill color
+  ctx.fillRect(50, 50, 150, 100); // Draw a rectangle (x, y, width, height)
+
+  // Draw a circle
+  ctx.beginPath(); // Begin a new path
+  ctx.arc(250, 150, 50, 0, Math.PI * 2); // Draw a circle (x, y, radius, startAngle, endAngle)
+  ctx.fillStyle = 'red'; // Set the fill color for the circle
+  ctx.fill(); // Fill the circle
+</script>
+</body>
+</html>

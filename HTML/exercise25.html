@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My first webpage</title>
+  <style>
+    /* Gallery layout */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    /* Each figure (image container) */
+    figure {
+      flex: 1 1 calc(25% - 10px);
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Images should fit within the container */
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Caption styling */
+    figcaption {
+      text-align: center;
+      font-size: 16px;
+      margin-top: 5px;
+    }
+
+    /* Responsive design for smaller screens */
+    @media (max-width: 600px) {
+      figure {
+        flex: 1 1 calc(50% - 10px);
+      }
+    }
+  </style>
+</head>
+<body>
+<p><a href="index.html">HomePage</a></p>
+
+<h1>Responsive Image Gallery</h1>
+
+<div class="gallery">
+  <figure>
+    <img src="IMG_For_Practice_code/chair.jpeg" alt="Image 1">
+    <figcaption>Image Caption 1</figcaption>
+  </figure>
+  <figure>
+    <img src="IMG_For_Practice_code/photo_2022-10-17_00-10-03.jpg" alt="Image 2">
+    <figcaption>Image Caption 2</figcaption>
+  </figure>
+  <figure>
+    <img src="IMG_For_Practice_code/photo_2022-10-17_00-45-24.jpg" alt="Image 3">
+    <figcaption>Image Caption 3</figcaption>
+  </figure>
+  <figure>
+    <img src="IMG_For_Practice_code/photo_2022-10-17_00-57-47.jpg" alt="Image 4">
+    <figcaption>Image Caption 4</figcaption>
+  </figure>
+</div>
+
+</body>
+</html>

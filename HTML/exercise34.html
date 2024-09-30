@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My first webpage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    .progress-container {
+      margin: 20px 0;
+    }
+    progress {
+      width: 100%;
+      height: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+<p><a href="index.html">HomePage</a></p>
+
+<h1>Progress Bar</h1>
+
+<div class="progress-container">
+  <label for="progressBar">Loading progress:</label>
+  <progress id="progressBar" value="70" max="100">70%</progress>
+  <span>70% completed</span>
+</div>
+
+</body>
+</html>
