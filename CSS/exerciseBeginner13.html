@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Navigation Bar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .content {
+            margin-top: 60px; /* Offset for fixed navbar */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p><a href="index.html">HomePage</a></p>
+    <div class="navbar">Fixed Navigation Bar</div>
+    <div class="content">
+        <h1>Content Below the Navbar</h1>
+        <p>This content is below the fixed navigation bar.</p>
+    </div>
+</body>
+</html>
